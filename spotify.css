@@ -1,0 +1,269 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    background-color:black;
+    color: white;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+  height: 100vh;
+  padding: 0.5rem;
+}
+.sidebar{
+ background-color:#000;
+   width: 340px;
+   border-radius: 1rem;/* 1 rem=16px*/
+   margin-right:0.5rem
+
+}
+.main-content{
+    background-color:#121212;
+flex:1;   /** flex 1 ka maltb sb ko ek ek do mujy uss sa xada space do**/
+border-radius: 1rem;/* 1 rem=16px*/
+overflow: auto; /* auto ka maltb hai scrool bar is visble when we need to scroll*/
+padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color:#121212;
+    width:100%;
+    position: fixed;
+  bottom:0;           /** bottom 0 sa matlab ya bottom pai ayaga bottom sa o margin **/
+ 
+    height:60px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex; /* ka mltb hai ek line mai hai// all line come under the horizantally*/
+    flex-direction: column;  /* one div comes under the other vertically*/
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+
+}
+.nav-option{
+    line-height: 2.5rem;  /** a single line occupie in division home and search come under space**/
+opacity: 0.7;
+padding: 0.5rem 0.75rem  /** 8pixels* between two divs home and search   left right*/
+}
+.nav-option:hover{
+    
+    opacity: 1;
+
+}
+.nav-option i{
+    font-size: 1.25rem;
+
+}
+.nav-option a{
+    font-size: 1rem;
+   margin-left: 1rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.option{
+    display: flex;
+    justify-content:space-between;   /* one goes left and other goes right in btween empty space*/
+    align-items: center;
+
+}
+.lib-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+
+}
+.icons{
+    font-size: 1.25rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+    display: flex;
+}
+
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.box{
+    
+    background-color: #232323;/* light grey*/
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+
+}
+.box p1{
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+.box p2{
+    font-size: 0.25rem;
+   font-weight: 500;
+}
+.badge{
+    background-color: white;
+  
+    border-radius: 100px;
+    border: none;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;     /* content fit under bdge or button*/
+}
+    .dark-badge{
+        background-color: #000;
+        color: #fff;
+    }
+
+.sticky-nav{
+    position:sticky; /* is ka mltb top wala scrool nhi hoga*/
+    top:0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem;
+    z-index: 10;     /* text not overlap*/
+}
+.sticky-nav-icons {
+margin-left: 0.75rem;
+
+
+}
+.sticky-nav-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.nav-items{
+    margin-right: 1rem;
+
+}
+@media(max-width:800px) {
+
+   .hide{
+display: none;
+   }
+} 
+.card{
+background-color: #232323;
+width: 220px;
+border-radius: 0.5rem;
+margin-left: 1.5rem;
+}
+.cards-container  {
+    display: flex;
+padding: 0.5rem;
+display: flex;
+flex-wrap: wrap;/* multiple cards wrap on multiple lines*/
+margin-top: 1rem;
+
+}
+.card-img{
+    width: 100%;
+    
+border-radius: 0.5rem;
+
+}
+.card-title{
+    font-weight: 600;
+    margin-left: 8px;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.7;
+   
+}
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* text to center*/
+
+}
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+.music-player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100;
+}
+
+.album{
+width: 25%;
+  /*ground-color: pink;*/
+
+}
+.player{
+    width: 50%;
+   /*   background-color: orange;*/
+    margin-right: 42%;
+}
+.controls{
+    width: 25%;
+  /*  background-color: green;*/
+}
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.player-control-icon{
+    height: 13px;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+
+
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.ply-back-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.progress-bar{
+    width: 90%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+ 
+    height: 16px;
+    width: 16px;
+    background-color: green;
+    border-radius: 50%;
+    margin-top:-6px;
+}
